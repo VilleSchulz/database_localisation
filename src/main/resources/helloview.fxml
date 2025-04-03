@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="344.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
+
+    <Label fx:id="title" text="%title">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <ComboBox fx:id="languageSelector" prefWidth="150.0" />
+    <ListView fx:id="job_titles" prefHeight="200.0" prefWidth="200.0">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></ListView>
+    <Label fx:id="error_label" />
+   <TextField promptText="\%keyName" fx:id="keyNameField"/>
+   <TextField promptText="\%translationName" fx:id="translationNameField" />
+    <Button fx:id="fetch_button" mnemonicParsing="false" onAction="#addJobTitle" text="%button">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
